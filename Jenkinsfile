@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/AneesaZaki/COMP367Lab2.git'
+                git branch: 'main', url: 'https://github.com/AneesaZaki/COMP367Lab3.git'
+                echo "GitHub Repository URL: https://github.com/AneesaZaki/COMP367Lab3.git"
             }
         }
         stage('Maven Build') {
